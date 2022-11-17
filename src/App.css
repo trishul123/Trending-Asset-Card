@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/Tomorrow-Medium.woff") format('woff');
+}
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'myfont';
+}
+.App-header {
+  position: absolute;
+  width: 1907px;
+  height: 927px;
+  background: #14172B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.row {
+  max-width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: left;
+}
+.row1{
+  max-width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: left;
+}
+p{
+  color: rgb(224, 218, 218);
+}
+.icon-heading{
+  color: #DC1FFF;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 0 1px;
+  border: 2px solid #DC1FFF;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.heading{
+  position: relative;
+  margin-top: 240px;
+  display: flex;
+  font-style: normal;
+  font-weight: 200; 
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: #ECF0FF;
+  opacity: 0.9;
+}
+
+.col {
+  margin: 0% 0 1% 0%;
+}
+
+.span_1_of_5 {
+  	width: 20%;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  position: relative;
+  width: 290px;
+  height: 350px;
+  background: linear-gradient(
+    180deg, 
+    rgba(98, 106, 136, 0.1) 0%, 
+    rgba(46, 49, 73, 0.1) 100%);
+  border-radius: 6%;
+  border: 4px solid #14172B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.circle {
+  position: relative;
+  top: 60px;
+  left: 85px;
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  border-radius: 100%;
+  z-index: 1;
+  border: 10px solid #14172B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.circle2{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle::before{
+  content: "";
+  position: absolute;
+  top:54px;
+  left: -39px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-top-right-radius: 70px;
+  box-shadow: 0px -20px 0 0 #14172B;
+}
+.circle::after{
+  content: "";
+  position: absolute;
+  top:54px;
+  right: -39px;
+  width: 40px;
+  height: 40px;
+  
+  border-top-left-radius: 70px;
+  box-shadow: 0px -20px 0 0px #14172B;
+}
+.bitcoin{
+ background: linear-gradient(180deg, #1d2134, #222129); 
+}
+.solana{
+  background: linear-gradient(180deg, #1d1f35, #271840);
+}
+.ethereum{
+  background: linear-gradient(180deg, #1c2035, #292d3f);
+}
+.binance{
+  background: linear-gradient(180deg, #1d2134, #22212a);
+}
+.shiba{
+  background: linear-gradient(180deg, #1c1f34, #291a28);
+}
+.bitcoinlogo{
+  background-image: url(./BitcoinSV.png);
+}
+.solanalogo{
+  background-image: url(./Solana.png);
+}
+.binancelogo{
+  background-image: url(./BinanceCoin.png);
+}
+.ethereumlogo{
+  background-image: url(./Ethereum.png);
+}
+.shibalogo{ 
+  background-image: url(./SHIBA_INU.png);
+}
+.cointitle{
+  position: absolute;
+  width: 231px;
+  height: 31px;
+  top: 71px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  color: #6b74ad;
+  opacity: 0.9;
+}
+.coinprice{
+position: absolute;
+width: 241px;
+top: 110px;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 31px;
+text-align: center;
+color: #ECF0FF;
+opacity: 0.9;
+height: 40px;
+background: #14172B;
+border-radius: 17px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pricetitle{
+  position: absolute;
+  top: 150px;
+  width: 241px;
+  height: 31px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  color: #5A5F7D;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cointvl{
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  top: 185px;
+  background: #14172B;
+  border-radius: 17px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 31px;
+  color: #ECF0FF;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tvltitle{
+  position: absolute;
+  width: 241px;
+  height: 31px;
+  top: 225px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5A5F7D;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular{
+  position: absolute;
+  width: 122px;
+  height: 40px;
+  top: 268px;
+  background: #14172B;
+  border-radius: 29.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo2{
+  width: 22px;
+  height: 22px;
+  margin: 0 9.33px;
+}
+.populartitle{
+position: absolute;
+width: 241px;
+height: 31px;
+left: 27px;
+top: 308px;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 31px;
+text-align: center;
+color: #5A5F7D;
+opacity: 0.9;
+}
+.dailychange{
+  width: 62.5px;
+  height: 31px;
+  position: absolute;
+  left: 180px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 31px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  z-index: 2;
+}
+.plusgreen{
+  color: #00FFA3;
+  font-weight: 300;
+}
+.minusred{
+  color: #FF4D4D;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+  .heading{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #ECF0FF;
+    opacity: 0.9;
+  }
+	.App-header {
+    position: absolute;
+    width: 100vmin;
+    height: 2800px;
+    background: #14172B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .span_1_of_5 {
+		width: 100%; 
+	}
+  .row{
+    max-width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .heading{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #ECF0FF;
+    opacity: 0.9;
+  }
+	.App-header {
+    position: absolute;
+    width: 100vmax;
+    height: 2800px;
+    background: #14172B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .span_1_of_5 {
+		width: 100%; 
+	}
+  .row{
+    max-width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
